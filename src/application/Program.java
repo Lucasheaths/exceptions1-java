@@ -35,11 +35,14 @@ public class Program {
 
 			reservation.updateDates(checkIn, checkOut);
 			System.out.println("Reservation: " + reservation);
-		} catch (ParseException e) {
+		} 
+		catch (ParseException e) {
 			System.out.println("Invalid date format");
-		} catch (DomainException e) {
+		} 
+		catch (DomainException e) {
 			System.out.println("Error in reservation: " + e.getMessage());
-		} catch (RuntimeException e) {
+		} 
+		catch (RuntimeException e) {
 			System.out.println("Unexpected error");
 		}
 
